@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*Esconder o botĆ£o atras dos damais objetos*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px;  /*Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    
+    width: 80%;
+    height: auto;
+}
+
+.container-modal {
+    width: 100%;
+    height: auto;
+}
+#openModal {
+    opacity: 0;
+    z-index: -99999;
+}
+/*=======================================*/
+
+
+
+body {
+
+    background: url('https://qzprod.files.wordpress.com/2015/03/use-facebook-f8-mark-zuckerberg.jpg?quality=80&strip=all&w=1600'); /* img ilustrativa , descartar ao utilizar no site*/
+    
+}
+
+#ModalPromo {
+/*    padding-top: 4%;  */
+    font-family: 'Roboto', sans-serif !important;
+    
+}
+
+#ModalPromo:before {
+    
+}
+
+#ModalPromo .modal-title {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;    
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: normal !important;
+}
+
+
+.cabecalho-modal {
+    background: #3B5998;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;    
+    width:80%;
+}
+
+.corpo-modal {
+    background-image: url('https://www.iprospect.com/~/media/Local/US/Our%20blog/Articles/AliExpress-InApp-Search-Image.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px ;    
+/*    position: relative;*/
+    margin: 0px;
+    padding-top: 17% !important;
+    
+    
+}
+
+.corpo-modal img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+img.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.corpo-modal h4 {
+    color: #333;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px #000;
+    font-size: 25px;
+    font-weight: normal !important;
+       
+    
+}
+
+.corpo-modal p {
+    
+    color: #3333;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 6%;    
+    text-align: justify;
+    font-weight: normal !important;
+}
+
+.corpo-modal span {
+/*    color: #071134;*/ /* color of facebook*/ 
+    color: #333;
+}
+
+.rodape-modal {
+    background: #3B5998;
+    color: #fff; 
+    width:80%;
+    height: 50px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+}
+
+
+
+/*==== botĆµes ==========*/
+.btn-fechar {
+
+    color: #fff;
+    background:#59983b !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px 30px 0px;
+    border-radius: 50%;
+    transition: all 0.4s ;
+    font-size: 50px !important;
+    z-index: 999;   
+    float: right;
+    margin-top: -1%;
+    margin-right: -1%; 
+    float: right;
+    border: solid 2px #59983b !important;
+    
+}
+
+.btn-fechar:hover {
+    background: #fff !important;
+    color:#59983b!important;
+    cursor: pointer;
+   
+    
+}
+
+.btn-aceitar {
+    color: #000;
+    background: #071134;
+    font-size: 30px;
+    padding: 10px 30px;
+    margin-top: 4%;
+    position: absolute;
+    
+}
+
+.btn-aceitar:hover {
+    
+    background: #000;
+    color: #071134;
+}
+
+.btn.desconto{
+    background: #071134;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-top: 35%;
+    transition: all 0.5s;
+    text-align: center;
+   
+    
+}
+
+.btn.desconto:hover {
+    background: #fff;
+    color: #071134;
+    border: solid 2px #071134;
+        
+}
+
+
+/*====== fim botĆµes ============*/
+
+.desconto {
+/*    margin-top: 27%;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8% !important;
+    text-align: center !important;    
+    position: absolute;
+    width: 300px;
+    
+}
+
+.desconto iframe {
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    padding: 10px  5px 10px 5px !important;
+    height: 50px;
+    border: 2px solid #071134 !important;
+ 
+        
+}
+.zero {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* ==media */
+
+@media  (min-width:0px)  and ( max-width:479px) {
+    
+    .modal {
+        padding-top: 20px;
+    }
+    
+    
+    .desconto {
+        margin-bottom: -40% !important;
+        position: absolute !important;
+        width: 250px !important;
+    }
+    
+    .desconto iframe {
+    
+    padding: 10px  5px 10px 5px !important;
+    margin-left: -33px;
+        
+        
+    }
+    
+    .btn-aceitar {
+        width: 100%  !important;
+    }
+    .modal-content {
+        width: 90% !important;
+
+    }
+    
+    .cabecalho-modal {
+        width: 90%;
+    }
+    
+     .rodape-modal {
+        width: 90%;
+    }
+    .corpo-modal {
+        
+        height: 120px;
+        padding-top: 66.6% !important;
+        background-position: center;
+        background-origin: inherit;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+
+    }
+    
+    
+    
+}
+
+
+
+@media  (min-width: 480px) and (max-width:1023px) {
+    
+    
+    .btn-aceitar {
+        width: 100%  !important;
+    }
+    
+    .modal-content {
+/*        overflow-y: scroll !important;*/
+    }
+    
+    .corpo-modal {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 250px;
+        padding-top: 1% !important;
+    }
+    .desconto {
+        padding-top: 20% !important;
+    }
+    
+    .desconto iframe {
+        margin-left: -450x !important;
+    }
+    
+}
+
+
+@media  (min-width: 1024px) and (max-width:1199px) {
+        
+    .corpo-modal {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        padding-top: 15% !important;
+    }
+    .desconto {
+        padding-top: 9% !important;
+    }
+    .desconto iframe {
+        margin-left: -45px;
+    }
+    
+}
+@media  (min-width: 1200px) and (max-width:1400px) {
+        
+    .corpo-modal {
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+        padding-top: 15% !important;
+    }
+    
+}
+
+/* fim media*/
